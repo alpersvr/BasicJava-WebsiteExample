@@ -1,8 +1,7 @@
-package WebsiteExample.dataAccess;
+package WebsiteExample.dataAccess.concretes;
 
-import WebsiteExample.entities.Category;
+import WebsiteExample.dataAccess.abstracts.CourseDao;
 import WebsiteExample.entities.Course;
-import WebsiteExample.entities.Instructor;
 
 import java.util.List;
 

@@ -1,8 +1,7 @@
 package WebsiteExample.business;
 
 import WebsiteExample.core.logging.Logger;
-import WebsiteExample.dataAccess.CategoryDao;
-import WebsiteExample.dataAccess.CourseDao;
+import WebsiteExample.dataAccess.abstracts.CategoryDao;
 import WebsiteExample.entities.Category;
 
 public class CategoryManager {

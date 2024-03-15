@@ -1,7 +1,7 @@
 package WebsiteExample.business;
 
 import WebsiteExample.core.logging.Logger;
-import WebsiteExample.dataAccess.CourseDao;
+import WebsiteExample.dataAccess.abstracts.CourseDao;
 import WebsiteExample.entities.Course;
 
 public class CourseManager {

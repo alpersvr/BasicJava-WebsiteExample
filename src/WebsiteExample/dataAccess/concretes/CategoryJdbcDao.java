@@ -1,17 +1,16 @@
-package WebsiteExample.dataAccess;
+package WebsiteExample.dataAccess.concretes;
 
+import WebsiteExample.dataAccess.abstracts.CategoryDao;
 import WebsiteExample.entities.Category;
 import WebsiteExample.entities.Course;
 
 import java.util.List;
 
-public class CategoryHibernateDao implements CategoryDao{
-
+public class CategoryJdbcDao implements CategoryDao {
 
     public void add(Category category) {
-        String data=category.getName();
-
-        System.out.println("Hibernate ile eklendi : "+data);
+        String data = category.getName();
+        System.out.println("Jdbc ile eklendi : " + data);
     }
 
 

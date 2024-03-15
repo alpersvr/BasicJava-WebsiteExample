@@ -1,4 +1,4 @@
-package WebsiteExample.dataAccess;
+package WebsiteExample.dataAccess.abstracts;
 
 import WebsiteExample.entities.Course;
 import WebsiteExample.entities.Instructor;

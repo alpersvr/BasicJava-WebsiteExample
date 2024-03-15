@@ -1,11 +1,12 @@
-package WebsiteExample.dataAccess;
+package WebsiteExample.dataAccess.concretes;
 
+import WebsiteExample.dataAccess.abstracts.InstructorDao;
 import WebsiteExample.entities.Course;
 import WebsiteExample.entities.Instructor;
 
 import java.util.List;
 
-public class InstructorJdbcDao implements InstructorDao{
+public class InstructorJdbcDao implements InstructorDao {
     @Override
     public void add(Instructor instructor) {
         String data3= instructor.getName();
