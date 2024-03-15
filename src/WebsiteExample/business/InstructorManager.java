@@ -2,21 +2,22 @@ package WebsiteExample.business;
 
 import WebsiteExample.core.logging.Logger;
 import WebsiteExample.dataAccess.CourseDao;
+import WebsiteExample.dataAccess.InstructorDao;
 import WebsiteExample.entities.Instructor;
 
 public class InstructorManager {
-    private CourseDao courseDao;
+    private InstructorDao instructorDao;
     private Logger[] loggers;
 
-    public InstructorManager(CourseDao courseDao, Logger[] loggers) {
-        this.courseDao=courseDao;
+    public InstructorManager(InstructorDao instructorDao, Logger[] loggers) {
+        this.instructorDao=instructorDao;
         this.loggers=loggers;
     }
     public void add(Instructor instructor) throws Exception{
-        if (instructor.getName().equals(instructor.getName())){
+        if (instructorDao.getByName(instructor.getName()) !=null){
             throw new Exception("Eğitmenler aynı olamaz");
         }
-        courseDao.add(instructor);
+        instructorDao.add(instructor);
         for (Logger logger:loggers){
             logger.log(instructor.getName());
         }

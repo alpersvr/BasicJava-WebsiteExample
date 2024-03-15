@@ -2,17 +2,11 @@ package WebsiteExample.dataAccess;
 
 import WebsiteExample.entities.Category;
 import WebsiteExample.entities.Course;
-import WebsiteExample.entities.Instructor;
 
 import java.util.List;
 
-public interface CourseDao {
-
-    void add(Course course);
-    List<Course>getAll();
+public interface CategoryDao {
+    void add(Category category);
+    List<Category> getAll();
     Course getByName(String name);
-
-
-
-
 }

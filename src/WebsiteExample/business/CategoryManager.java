@@ -1,21 +1,22 @@
 package WebsiteExample.business;
 
 import WebsiteExample.core.logging.Logger;
+import WebsiteExample.dataAccess.CategoryDao;
 import WebsiteExample.dataAccess.CourseDao;
 import WebsiteExample.entities.Category;
 
 public class CategoryManager {
-    private CourseDao courseDao;
+    private CategoryDao categoryDao;
     private Logger[] loggers;
-    public CategoryManager(CourseDao courseDao,Logger[] loggers){
-        this.courseDao=courseDao;
+    public CategoryManager(CategoryDao categoryDao,Logger[] loggers){
+        this.categoryDao=categoryDao;
         this.loggers=loggers;
     }
     public void add(Category category) throws Exception{
-        if(category.getName().equals(category.getName())){
-            throw new Exception("Aynı katagoriden 2 tane olamaz");
+        if(categoryDao.getByName(category.getName()) !=null){
+            throw new Exception("Kategori ismi tekrar edemez");
         }
-        courseDao.add(category);
+        categoryDao.add(category);
         for (Logger logger:loggers){
             logger.log(category.getName());
         }

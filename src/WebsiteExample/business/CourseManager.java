@@ -14,7 +14,11 @@ public class CourseManager {
     }
     public void add(Course course)throws Exception{
         if (course.getPrice()<0){
-            throw new Exception("Kursun fiyatı 0dan küçük olamaz");
+            throw new Exception("Bir kursun fiyatı 0 dan küçük olamaz");
+        }
+
+        if(courseDao.getByName(course.getName()) !=null){
+            throw new Exception("Kurs ismi tekrar edemez");
         }
         courseDao.add(course);
         for (Logger logger:loggers){
