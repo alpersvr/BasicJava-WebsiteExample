@@ -13,7 +13,7 @@ import WebsiteExample.entities.Course;
 import WebsiteExample.entities.Instructor;
 
 public class main {
-    public static void main(String[] args) throws Exception{
+    public static void Main(String[] args) throws Exception{
         Course course1=new Course(1,"Java",100);
         Logger[] loggers={new DatabaseLogger(),new FileLogger(),new MailLogger(),};
         CourseManager courseManager=new CourseManager(new HibernateDao(),loggers);
