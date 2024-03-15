@@ -1,4 +1,4 @@
-package kodlamaİo.core.logging;
+package WebsiteExample.core.logging;
 
 public class MailLogger implements Logger{
     @Override

@@ -1,4 +1,4 @@
-package kodlamaİo.entities;
+package WebsiteExample.entities;
 
 public class Instructor {
     private int id;

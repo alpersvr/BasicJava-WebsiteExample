@@ -1,9 +1,8 @@
-package kodlamaİo.business;
+package WebsiteExample.business;
 
-import kodlamaİo.core.logging.Logger;
-import kodlamaİo.dataAccess.CourseDao;
-import kodlamaİo.dataAccess.HibernateDao;
-import kodlamaİo.entities.Course;
+import WebsiteExample.core.logging.Logger;
+import WebsiteExample.dataAccess.CourseDao;
+import WebsiteExample.entities.Course;
 
 public class CourseManager {
     private CourseDao courseDao;

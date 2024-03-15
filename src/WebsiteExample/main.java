@@ -1,16 +1,16 @@
-package kodlamaİo;
+package WebsiteExample;
 
-import kodlamaİo.business.CategoryManager;
-import kodlamaİo.business.CourseManager;
-import kodlamaİo.business.InstructorManager;
-import kodlamaİo.core.logging.DatabaseLogger;
-import kodlamaİo.core.logging.FileLogger;
-import kodlamaİo.core.logging.Logger;
-import kodlamaİo.core.logging.MailLogger;
-import kodlamaİo.dataAccess.HibernateDao;
-import kodlamaİo.entities.Category;
-import kodlamaİo.entities.Course;
-import kodlamaİo.entities.Instructor;
+import WebsiteExample.business.CategoryManager;
+import WebsiteExample.business.CourseManager;
+import WebsiteExample.business.InstructorManager;
+import WebsiteExample.core.logging.DatabaseLogger;
+import WebsiteExample.core.logging.FileLogger;
+import WebsiteExample.core.logging.Logger;
+import WebsiteExample.core.logging.MailLogger;
+import WebsiteExample.dataAccess.HibernateDao;
+import WebsiteExample.entities.Category;
+import WebsiteExample.entities.Course;
+import WebsiteExample.entities.Instructor;
 
 public class main {
     public static void main(String[] args) throws Exception{

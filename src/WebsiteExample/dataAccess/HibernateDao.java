@@ -1,8 +1,8 @@
-package kodlamaİo.dataAccess;
+package WebsiteExample.dataAccess;
 
-import kodlamaİo.entities.Category;
-import kodlamaİo.entities.Course;
-import kodlamaİo.entities.Instructor;
+import WebsiteExample.entities.Category;
+import WebsiteExample.entities.Course;
+import WebsiteExample.entities.Instructor;
 
 public class HibernateDao implements CourseDao{
 
